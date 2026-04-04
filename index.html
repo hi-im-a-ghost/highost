@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Highost</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+    *{box-sizing:border-box;margin:0;padding:0}
+    :root{--black:#111;--white:#fff;--gray:#888;--light:#f7f7f7;--border:#e8e8e8}
+    body{font-family:'Nunito',sans-serif;background:var(--white);color:var(--black);min-height:100vh}
+
+    nav{display:flex;align-items:center;justify-content:space-between;padding:20px 48px;border-bottom:1px solid var(--border)}
+    .logo{font-size:18px;font-weight:800;letter-spacing:.15em}
+
+    hero{display:flex;flex-direction:column;align-items:center;text-align:center;padding:80px 24px 60px}
+    .ghost-big{width:90px;height:110px;margin-bottom:32px}
+    h1{font-size:48px;font-weight:800;line-height:1.1;letter-spacing:-.02em;margin-bottom:16px}
+    .sub{font-size:18px;color:var(--gray);font-weight:600;max-width:420px;line-height:1.6;margin-bottom:40px}
+
+    .steps{background:var(--light);border-radius:24px;padding:40px;max-width:560px;width:100%;margin:0 auto 40px;text-align:left}
+    .steps h2{font-size:14px;font-weight:700;letter-spacing:.1em;color:var(--gray);text-transform:uppercase;margin-bottom:24px}
+    .step{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}
+    .step:last-child{margin-bottom:0}
+    .step-num{width:28px;height:28px;border-radius:50%;background:var(--black);color:var(--white);font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+    .step-text{font-size:15px;font-weight:600;line-height:1.5}
+    .step-text span{color:var(--gray);font-weight:400;display:block;font-size:13px;margin-top:2px}
+    code{background:var(--border);padding:2px 8px;border-radius:6px;font-family:monospace;font-size:13px;color:var(--black)}
+
+    .cta{display:inline-flex;align-items:center;gap:10px;background:var(--black);color:var(--white);padding:16px 32px;border-radius:14px;font-size:15px;font-weight:700;text-decoration:none;transition:.15s;margin-bottom:12px}
+    .cta:hover{opacity:.85;transform:scale(1.02)}
+    .cta:active{transform:scale(.98)}
+    .cta-note{font-size:12px;color:var(--gray);font-weight:600}
+
+    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;max-width:700px;width:100%;margin:60px auto;padding:0 24px}
+    .feat{background:var(--light);border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:8px}
+    .feat-icon{width:28px;height:28px}
+    .feat-title{font-size:14px;font-weight:700}
+    .feat-desc{font-size:13px;color:var(--gray);font-weight:600;line-height:1.5}
+
+    .redes{max-width:560px;width:100%;margin:0 auto 60px;padding:0 24px}
+    .redes h2{font-size:14px;font-weight:700;letter-spacing:.1em;color:var(--gray);text-transform:uppercase;margin-bottom:16px;text-align:center}
+    .redes-grid{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+    .red{background:var(--light);border-radius:99px;padding:6px 14px;font-size:12px;font-weight:700;color:var(--black)}
+
+    footer{text-align:center;padding:32px;border-top:1px solid var(--border);font-size:13px;color:var(--gray);font-weight:600}
+  </style>
+</head>
+<body>
+
+  <nav>
+    <span class="logo">highost</span>
+  </nav>
+
+  <hero>
+    <svg class="ghost-big" viewBox="0 0 64 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M32 4C17.6 4 6 15.6 6 30v34l8-8 8 8 8-8 8 8 8-8 8 8V30C58 15.6 46.4 4 32 4z" stroke="#111" stroke-width="3.5" stroke-linejoin="round"/>
+      <circle cx="22" cy="30" r="4" fill="#111"/>
+      <circle cx="42" cy="30" r="4" fill="#111"/>
+    </svg>
+
+    <h1>Navega sin<br/>interrupciones.</h1>
+    <p class="sub">Highost bloquea anuncios, trackers y scripts de seguimiento de más de 20 redes publicitarias.</p>
+
+    <div class="steps">
+      <h2>Cómo instalar</h2>
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-text">
+          Descarga la extensión
+          <span>Descarga el archivo <code>highost.zip</code> y descomprímelo</span>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-text">
+          Abre Chrome y ve a extensiones
+          <span>Escribe <code>chrome://extensions</code> en la barra de direcciones</span>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-text">
+          Activa el modo desarrollador
+          <span>Botón arriba a la derecha en la página de extensiones</span>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-text">
+          Carga la extensión
+          <span>Click en "Cargar descomprimida" y selecciona la carpeta <code>highost</code></span>
+        </div>
+      </div>
+    </div>
+
+    <a class="cta" href="#">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+        <polyline points="7 10 12 15 17 10"/>
+        <line x1="12" y1="15" x2="12" y2="3"/>
+      </svg>
+      Descargar Highost
+    </a>
+    <p class="cta-note">Gratis · Solo Chrome · Sin datos recolectados</p>
+  </hero>
+
+  <div class="redes">
+    <h2>Redes bloqueadas</h2>
+    <div class="redes-grid">
+      <span class="red">Google Ads</span>
+      <span class="red">DoubleClick</span>
+      <span class="red">Facebook</span>
+      <span class="red">Amazon Ads</span>
+      <span class="red">Twitter Ads</span>
+      <span class="red">TikTok Ads</span>
+      <span class="red">Taboola</span>
+      <span class="red">Outbrain</span>
+      <span class="red">Criteo</span>
+      <span class="red">AppNexus</span>
+      <span class="red">Rubicon</span>
+      <span class="red">OpenX</span>
+      <span class="red">PubMatic</span>
+      <span class="red">Snapchat</span>
+      <span class="red">LinkedIn Ads</span>
+      <span class="red">Pinterest Ads</span>
+      <span class="red">Hotjar</span>
+      <span class="red">Google Analytics</span>
+      <span class="red">Mixpanel</span>
+      <span class="red">Clarity</span>
+    </div>
+  </div>
+
+  <div class="features">
+    <div class="feat">
+      <svg class="feat-icon" viewBox="0 0 64 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M32 4C17.6 4 6 15.6 6 30v34l8-8 8 8 8-8 8 8 8-8 8 8V30C58 15.6 46.4 4 32 4z" stroke="#111" stroke-width="3.5" stroke-linejoin="round"/>
+        <circle cx="22" cy="30" r="4" fill="#111"/>
+        <circle cx="42" cy="30" r="4" fill="#111"/>
+      </svg>
+      <span class="feat-title">60 reglas de bloqueo</span>
+      <span class="feat-desc">Bloquea las redes publicitarias más usadas en internet.</span>
+    </div>
+    <div class="feat">
+      <svg class="feat-icon" viewBox="0 0 64 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M32 4C17.6 4 6 15.6 6 30v34l8-8 8 8 8-8 8 8 8-8 8 8V30C58 15.6 46.4 4 32 4z" stroke="#111" stroke-width="3.5" stroke-linejoin="round"/>
+        <circle cx="22" cy="30" r="4" fill="#111"/>
+        <circle cx="42" cy="30" r="4" fill="#111"/>
+      </svg>
+      <span class="feat-title">Anti tracker</span>
+      <span class="feat-desc">Bloquea scripts que rastrean tu comportamiento en la web.</span>
+    </div>
+    <div class="feat">
+      <svg class="feat-icon" viewBox="0 0 64 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M32 4C17.6 4 6 15.6 6 30v34l8-8 8 8 8-8 8 8 8-8 8 8V30C58 15.6 46.4 4 32 4z" stroke="#111" stroke-width="3.5" stroke-linejoin="round"/>
+        <circle cx="22" cy="30" r="4" fill="#111"/>
+        <circle cx="42" cy="30" r="4" fill="#111"/>
+      </svg>
+      <span class="feat-title">Mas rapido</span>
+      <span class="feat-desc">Las páginas cargan más rápido sin scripts de anuncios.</span>
+    </div>
+    <div class="feat">
+      <svg class="feat-icon" viewBox="0 0 64 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M32 4C17.6 4 6 15.6 6 30v34l8-8 8 8 8-8 8 8 8-8 8 8V30C58 15.6 46.4 4 32 4z" stroke="#111" stroke-width="3.5" stroke-linejoin="round"/>
+        <circle cx="22" cy="30" r="4" fill="#111"/>
+        <circle cx="42" cy="30" r="4" fill="#111"/>
+      </svg>
+      <span class="feat-title">Sin datos</span>
+      <span class="feat-desc">No recolectamos, vendemos ni compartimos ningún dato tuyo.</span>
+    </div>
+  </div>
+
+  <footer>highost</footer>
+
+</body>
+</html>
